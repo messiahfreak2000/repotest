@@ -1,6 +1,7 @@
  name: Repository Dispatch
+ on: [release]
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.PAT }}
-          repository: username/my-repo
-          event-type: release
+          token: ${{ secrets.PATTOKEN }}
+          repository: LetsGoLearn/Dusk_QuickChecks
+          event-type: [release]
