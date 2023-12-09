@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Repository Dispatch
-      uses: peter-evans/repository-dispatch@v2
+      uses: peter-evans/repository-dispatch@v2.1.2
       with:
           token: ${{ secrets.PATTOKEN }}
           repository: username/my-repo
