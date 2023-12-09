@@ -4,6 +4,6 @@ jobs:
         name: job
         uses: peter-evans/repository-dispatch@v2.1.2
                 with:
-                token: ${{ secrets.PATTOKEN }}
-                repository: https://github.com/LetsGoLearn/QA_Ghostruns
-                event-type: my-event
+                 token: ${{ secrets.PATTOKEN }}
+                 repository: https://github.com/LetsGoLearn/QA_Ghostruns
+                 event-type: my-event
