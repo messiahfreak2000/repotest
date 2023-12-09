@@ -1,0 +1,16 @@
+name: Dispatch Workflow
+
+on: [push]
+
+jobs:
+  laravel-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Repository Dispatch
+      uses: peter-evans/repository-dispatch@v2
+      with:
+          token: ${{ secrets.PATTOKEN }}
+          repository: username/my-repo
+          event-type: my-event
