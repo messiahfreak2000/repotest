@@ -1,9 +1,6 @@
 name: Repository Dispatch
-on: [push]
-jobs:
-
- uses: rshop/trigger-workflow-action@v1
- with:
-  token: ${{ secrets.PATTOKEN }}
-  repository: 'https://github.com/LetsGoLearn/QA_Ghostruns'
-  workflowId: 12345
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.PATTOKEN }}
+          repository: https://github.com/LetsGoLearn/QA_Ghostruns
+          event-type: my-event
